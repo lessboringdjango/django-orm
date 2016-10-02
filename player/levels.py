@@ -24,6 +24,10 @@ def level3():
 
 def level4():
     Pizza.objects.create(name='pepperoni')
+    Pizza.objects.create(name='pepperoni')
+    Pizza.objects.create(name='pepperoni')
+    Pizza.objects.create(name='pepperoni')
+    Pizza.objects.create(name='pepperoni')
 
     return {
         'pizzas': Pizza.objects.all()

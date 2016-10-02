@@ -7,6 +7,15 @@ from game.grade import grade
 def grade_api(request, which):
     try:
         result = grade(which)
-        return Response(result)
+        status = 200
     except Exception as e:
-        return Response({'message': e.message}, status=400)
+        result = {'message': e.message}
+        status = 400
+
+    response = Response(result, status=status)
+
+    response["Access-Control-Allow-Origin"] = "*"
+    response["Access-Control-Allow-Methods"] = "POST, GET, OPTIONS"
+    response["Access-Control-Max-Age"] = "1000"
+    response["Access-Control-Allow-Headers"] = "*"
+    return response

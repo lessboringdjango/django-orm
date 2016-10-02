@@ -1,3 +1,5 @@
+If the dev server isn't running because it is reloading, do something on the client to wait a little and then try again
+
 """
 Make a mithril spa that connects over api to a pip installed package that the user installs into their app as the first level
 You play the game in your own editor and have the game program running at the same time
