@@ -1,0 +1,11 @@
+.DS_Store
+*.pyc
+Thumbs.db
+db.sqlite3
+lessboring/private.py
+db.json
+*.log
+node_modules/
+public/
+*.swp
+*.swo

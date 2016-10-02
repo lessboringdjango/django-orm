@@ -1,0 +1,30 @@
+"""
+Make a mithril spa that connects over api to a pip installed package that the user installs into their app as the first level
+You play the game in your own editor and have the game program running at the same time
+It issues a challenge and then you mash check on the game program and it checks, doing juicy things
+The pip package hooks into your project and makes the things available through a rest api that the thing connects to
+Each level is a challenge to make something happen
+charge $30 for it
+Make a private forum where you can discuss the answers after buying
+Somehow make this clear the database every time through, maybe by running the tests
+I could just manually clear out everything before each level
+I make the serializer, they have to provide the model
+Will probably need some fixtures for later levels
+"""
+
+
+#https://docs.djangoproject.com/en/1.10/ref/models/querysets/
+
+
+#1 install Django and the package
+#2 install postgres (or don't and use sqlite?)
+#3 create()
+#4 count()
+#5 exists()
+#6 create()
+#7 
+
+
+create a view called
+
+
