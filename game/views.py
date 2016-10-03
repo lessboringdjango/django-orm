@@ -5,11 +5,12 @@ from game.grade import grade
 
 @api_view(['GET'])
 def grade_api(request, which):
+    which = int(which)
     try:
         result = grade(which)
         status = 200
     except Exception as e:
-        result = {'message': e.message}
+        result = {'correct': False, 'message': e.message}
         status = 400
 
     response = Response(result, status=status)
